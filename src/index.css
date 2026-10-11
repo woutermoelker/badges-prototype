@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/* Colours taken from winparts.nl. Close enough to recognise, not a pixel copy. */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-wp-purple: #4b16d1;
+  --color-wp-purple-dark: #330a80;
+  --color-wp-purple-ink: #1f0752;
+  --color-wp-pink: #ed4770;
+  --color-wp-orange: #ff9900;
+  --color-wp-orange-dark: #e68a00;
+  --color-wp-green: #4ea43c;
+  --color-wp-green-dark: #2f7a22;
+  --color-wp-stock: #3c9a2a;
+  --color-wp-plate: #f5c518;
+  --color-wp-star: #f08a24;
+  --color-wp-grey: #f2f2f4;
+  --color-wp-line: #e3e3e8;
+  --color-wp-text: #2b2b2b;
+  --color-wp-muted: #888888;
+
+  --color-badge-rated: #0b6b5e;
+  --color-badge-rated-bg: #e3f4f0;
+  --color-badge-returns: #1d4f91;
+  --color-badge-returns-bg: #e6eefa;
+  --color-badge-choice: #4b16d1;
+  --color-badge-choice-bg: #efe9fd;
+
+  /* Control and variant, used in the toolbar, debug panel and charts. */
+  --color-control: #2a78d6;
+  --color-variant: #eb6834;
+
+  /* Prototype toolbar and debug panel: dark, so it's clearly not part of the shop. */
+  --color-proto-bg: #14121a;
+  --color-proto-panel: #1d1a26;
+  --color-proto-line: #2e2a3b;
+  --color-proto-text: #e9e6f2;
+  --color-proto-muted: #9a93ad;
+  --color-proto-accent: #a78bfa;
+
+  /* Results page */
+  --color-viz-surface: #fcfcfb;
+  --color-viz-page: #f3f3f1;
+  --color-viz-text: #0b0b0b;
+  --color-viz-text-2: #52514e;
+  --color-viz-grid: #e1e0d9;
+  --color-viz-axis: #c3c2b7;
+  --color-viz-good: #0ca30c;
+  --color-viz-good-text: #006300;
+  --color-viz-bad: #d03b3b;
+}
+
+html,
+body {
+  background: #ffffff;
+  color: var(--color-wp-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+.price-cents {
+  font-size: 0.55em;
+  vertical-align: super;
+  line-height: 0;
+}
